@@ -61,6 +61,14 @@ body {
   font-family: Arial, sans-serif;
 }
 
+#Lien:hover {
+    font-size: 30px;
+    color: rgb(146, 146, 255);
+    font-family: Arial, sans-serif;
+
+
+}
+
 body {
   background-color: #202020;
 }
@@ -79,10 +87,23 @@ a {
   font-family: Arial, sans-serif;
 }
 
+a:hover {
+  color: rgb(146, 146, 255); /* Nouvelle couleur lorsque le lien est survolé (par exemple, rouge) */
+  font-family: Arial, sans-serif;
+}
+
 #Lienaufond {
   font-size: 30px; /* Changez la valeur à la taille de police souhaitée */
   color: rgb(112, 112, 255);
   font-family: Arial, sans-serif;
   position: absolute;
   bottom: 0;
+}
+
+#Lienaufond:hover {
+    font-size: 30px;
+    color: rgb(146, 146, 255); 
+    font-family: Arial, sans-serif;
+    position: absolute;
+    bottom: 0;  
 }
