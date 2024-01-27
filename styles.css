@@ -107,3 +107,21 @@ a:hover {
     position: absolute;
     bottom: 0;  
 }
+
+#Lien2 {
+  font-size: 25px; /* Changez la valeur à la taille de police souhaitée */
+  color: rgb(112, 112, 255);
+  font-family: Arial, sans-serif;
+}
+
+#Lien2:hover {
+  font-size: 25px; /* Changez la valeur à la taille de police souhaitée */
+  color: rgb(146, 146, 255); 
+  font-family: Arial, sans-serif;
+}
+
+#h2central {
+  font-family: "arial", sans-serif;
+  color: ghostwhite;
+  text-align: center; 
+}
