@@ -1,37 +1,30 @@
-/* Changer la police de tous les paragraphes */
 p {
-    font-family: Arial, sans-serif;
-    color: ghostwhite;
+  font-family: Arial, sans-serif;
+  color: ghostwhite;
   }
 
-/* Changer la police des titres h1 */
 h1 {
-    font-family: "Arial", sans-serif;
-    color: ghostwhite;
-    text-align: center;
-    font-size: 60px;
+  font-family: "Arial", sans-serif;
+  color: ghostwhite;
+  text-align: center;
+  font-size: 60px;
 }
 
-/* Changer la police des titres h2 */
 h2 {
-    font-family: "arial", sans-serif;
-    color: ghostwhite;
+  font-family: "arial", sans-serif;
+  color: ghostwhite;
+  text-align: left;
 }
 
-/* Changer la police des titres h3 */
+#h2central {
+  font-family: "arial", sans-serif;
+  color: ghostwhite;
+  text-align: center; 
+}
+
 h3 {
-    font-family: "arial", sans-serif;
-    color: ghostwhite;
-}
-
-.mon-bloc {
-    background-color: rgb(23, 0, 59); /* Couleur avec une transparence de 50% */
-    width: 100%;
-    height: 90px;
-}
-
-body {
-  margin: 0 auto; /* Supprime les marges par défaut du corps */
+  font-family: "arial", sans-serif;
+  color: ghostwhite;
 }
 
 #texte-au-fond {
@@ -42,55 +35,16 @@ body {
 
 #Texte-de-présentation {
   display: flex;
-  flex-direction: column; /* Disposition des éléments en colonne */
-  justify-content: center; /* Centrage vertical */
-  align-items: center; /* Centrage horizontal */
-  height: 70vh; /* Hauteur égale à la hauteur de la fenêtre */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
   color: ghostwhite;
 }
 
 #Titre {
-  width: 250px; /* Largeur désirée */
-  height: auto; /* Ajuster la hauteur automatiquement pour conserver les proportions */
-}
-
-#Logo {
-  width: 80px; /* Largeur désirée */
-  height: auto; /* Ajuster la hauteur automatiquement pour conserver les proportions */
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-#video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; /* Pour s'assurer que la vidéo est en arrière-plan */
-}
-
-#Lien {
-  font-size: 30px; /* Changez la valeur à la taille de police souhaitée */
-  color: rgb(112, 112, 255);
-  font-family: Arial, sans-serif;
-}
-
-#Lien:hover {
-    font-size: 30px;
-    color: rgb(146, 146, 255);
-    font-family: Arial, sans-serif;
-
-
-}
-
-body {
-  background-color: #202020;
-}
-
-iframe {
-  background-color: #202020;
+  width: 200px;
+  height: auto;
 }
 
 #ConseilsAstuces {
@@ -105,13 +59,25 @@ a {
 }
 
 a:hover {
-  color: rgb(112, 112, 255); /* Nouvelle couleur lorsque le lien est survolé (par exemple, rouge) */
+  color: rgb(112, 112, 255);
   font-family: Arial, sans-serif;
   text-decoration: underline;
 }
 
+#Lien {
+  font-size: 30px;
+  color: rgb(112, 112, 255);
+  font-family: Arial, sans-serif;
+}
+
+#Lien:hover {
+  font-size: 30px;
+  color: rgb(146, 146, 255);
+  font-family: Arial, sans-serif;
+}
+
 #Lienaufond {
-  font-size: 30px; /* Changez la valeur à la taille de police souhaitée */
+  font-size: 30px;
   color: rgb(112, 112, 255);
   font-family: Arial, sans-serif;
   position: absolute;
@@ -127,21 +93,65 @@ a:hover {
 }
 
 #Lien2 {
-  font-size: 25px; /* Changez la valeur à la taille de police souhaitée */
+  font-size: 25px;
   color: rgb(112, 112, 255);
   font-family: Arial, sans-serif;
 }
 
 #Lien2:hover {
-  font-size: 25px; /* Changez la valeur à la taille de police souhaitée */
+  font-size: 25px;
   color: rgb(146, 146, 255); 
   font-family: Arial, sans-serif;
 }
 
-#h2central {
-  font-family: "arial", sans-serif;
-  color: ghostwhite;
-  text-align: center; 
+body {
+  background-color: #202020;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background: #111111;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.mon-bloc {
+    background-color: rgb(23, 0, 59);
+    width: 100%;
+    height: 90px;
+}
+
+#Logo {
+  width: 60px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#Avatar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+iframe {
+  background-color: #202020;
 }
 
 .nav {
@@ -154,17 +164,7 @@ a:hover {
 .nav li {
   color: white;
   font-family: "Arial", sans-serif; 
-  margin-left: 30px; /* Appliquer la marge gauche à chaque élément li */
+  margin-left: 30px;
   font-size: 25px;
 }
 
-header {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  background: #111111;
-  height: 100px;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
