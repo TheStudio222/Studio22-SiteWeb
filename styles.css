@@ -118,6 +118,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 9999;
 }
 
 .mon-bloc {
@@ -138,6 +139,22 @@ header {
   bottom: 0;
   right: 0;
   z-index: -1;
+}
+
+#jeux {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#jeux img {
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+#jeux img:hover {
+  transform: scale(1.1);
+
 }
 
 #video-background {
