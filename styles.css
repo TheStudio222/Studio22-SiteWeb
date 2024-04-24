@@ -121,6 +121,23 @@ header {
   z-index: 9999;
 }
 
+#Nouveautées {
+  background: #7E8026;
+  width: 30%;
+  align-content: center;
+
+}
+
+#Nouveautées li {
+  align-items: center;
+  font-family: "arial", sans-serif;
+  color: ghostwhite;
+}
+
+#Nouveautées h3 {
+  align-items: center;
+}
+
 .mon-bloc {
     background-color: rgb(23, 0, 59);
     width: 100%;
@@ -155,6 +172,16 @@ header {
 #jeux img:hover {
   transform: scale(1.1);
 
+}
+
+#Images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#Images img {
+  margin: 10px;
 }
 
 #video-background {
