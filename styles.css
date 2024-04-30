@@ -177,6 +177,7 @@ header {
 #jeux img {
   margin: 10px;
   transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
 #jeux img:hover {
