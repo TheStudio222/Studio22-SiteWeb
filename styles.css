@@ -121,21 +121,31 @@ header {
   z-index: 9999;
 }
 
+@keyframes scintillement {
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
 #Nouveautées {
   background: #7E8026;
   width: 30%;
-  align-content: center;
-
+  text-align: center;
+  border-radius: 10px;
+  animation-name: scintillement;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 #Nouveautées li {
-  align-items: center;
+  display: flex;
+  justify-content: center;
   font-family: "arial", sans-serif;
   color: ghostwhite;
 }
 
 #Nouveautées h3 {
-  align-items: center;
+  text-align: center;
 }
 
 .mon-bloc {
