@@ -144,11 +144,12 @@ header {
 }
 
 #Nouveautées {
-  background: #0c0052;
-  width: 35%;
+  background: rgb(37, 2, 58);
+  width: 30%;
   height: 100px;
   text-align: center;
   border-radius: 10px;
+  border: 2px solid black;
   animation-name: scintillement;
   animation-duration: 2s;
   animation-iteration-count: 1;
