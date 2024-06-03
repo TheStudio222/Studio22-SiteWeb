@@ -28,7 +28,7 @@ h3 {
 }
 
 button {
-  background-color: #0c0052; /* Couleur de fond du bouton */
+  background-color: rgb(37, 2, 58); /* Couleur de fond du bouton */
   border: none; /* Retirer la bordure par défaut */
   padding: 10px 20px; /* Ajouter du padding */
   cursor: pointer; /* Changer le curseur au survol */
@@ -78,6 +78,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+#BoutonJeux a {
+  color: rgb(255, 255, 255);
 }
 
 #Lien {
