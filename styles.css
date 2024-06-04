@@ -28,13 +28,14 @@ h3 {
 }
 
 button {
-  background-color: rgb(37, 2, 58); /* Couleur de fond du bouton */
+  background-color: rgb(35, 0, 79); /* Couleur de fond du bouton */
   border: none; /* Retirer la bordure par défaut */
   padding: 10px 20px; /* Ajouter du padding */
   cursor: pointer; /* Changer le curseur au survol */
   color: #202020; /* Couleur du texte du bouton */
   border-radius: 10px;
   height: 50px;
+  border: 2px solid black;
 }
 
 #texte-au-fond {
@@ -125,7 +126,7 @@ a:hover {
 }
 
 body {
-  background-color: #202020;
+  background-color: rgb(9, 0, 67);
   margin: 0 auto;
 }
 
@@ -148,7 +149,7 @@ header {
 }
 
 #Nouveautées {
-  background: rgb(37, 2, 58);
+  background: rgb(35, 0, 79);
   width: 30%;
   height: 100px;
   text-align: center;
