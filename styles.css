@@ -28,14 +28,14 @@ h3 {
 }
 
 button {
-  background-color: rgb(35, 0, 79); /* Couleur de fond du bouton */
+  background-color: rgb(2, 0, 121); /* Couleur de fond du bouton */
   border: none; /* Retirer la bordure par défaut */
   padding: 10px 20px; /* Ajouter du padding */
   cursor: pointer; /* Changer le curseur au survol */
   color: #202020; /* Couleur du texte du bouton */
   border-radius: 10px;
   height: 50px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 204, 255);
 }
 
 #texte-au-fond {
@@ -49,8 +49,9 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 90vh;
   color: ghostwhite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 #Titre {
@@ -70,7 +71,7 @@ a {
 }
 
 a:hover {
-  color: rgb(112, 112, 255);
+  color:rgb(0, 204, 255);
   font-family: Arial, sans-serif;
   text-decoration: underline;
 }
@@ -130,6 +131,14 @@ body {
   margin: 0 auto;
 }
 
+#page-background {
+  background: url('pictures/Capture\ d\'écran\ 2024-06-05\ 132537.png') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; /* Ensure the container takes full viewport height */
+  position: relative; /* So child elements can be positioned absolutely if needed */
+}
+
 header {
   position: fixed;
   display: flex;
@@ -149,12 +158,12 @@ header {
 }
 
 #Nouveautées {
-  background: rgb(35, 0, 79);
+  background: rgb(2, 0, 121);
   width: 30%;
   height: 100px;
   text-align: center;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 204, 255);
   animation-name: scintillement;
   animation-duration: 2s;
   animation-iteration-count: 1;
@@ -216,6 +225,7 @@ header {
 
 #Images img {
   margin: 10px;
+  border-radius: 10px;
 }
 
 #video-background {
@@ -246,3 +256,22 @@ iframe {
   font-size: 25px;
 }
 
+/* Changer la barre de défilement */
+
+/* Style pour les navigateurs basés sur WebKit */
+::-webkit-scrollbar {
+  width: 12px; /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f100; /* Couleur de la piste */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 96, 121); /* Couleur de la barre de défilement */
+  border-radius: 10px; /* Arrondir les bords */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 204, 255); /* Couleur de la barre de défilement au survol */
+}
