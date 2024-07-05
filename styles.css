@@ -210,7 +210,7 @@ header {
 
 #sites {
   display: flex;
-  gap: 40px; /* Espace entre les deux divisions */
+  gap: 100px; /* Espace entre les deux divisions */
   flex-wrap: wrap;
   justify-content: center;
 }
