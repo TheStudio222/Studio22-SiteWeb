@@ -1,15 +1,3 @@
-video {
-  margin: 20px;
-  border-radius: 10px;
-  border: 2px solid rgb(0, 204, 255);
-  box-shadow: 0 0 .2rem #fff,
-  0 0 .2rem #fff,
-  0 0 2rem #bc13fe,
-  0 0 0.8rem #bc13fe,
-  0 0 2.8rem #bc13fe,
-  inset 0 0 1.3rem #bc13fe;
-}
-
 p {
   font-family: Arial, sans-serif;
   color: ghostwhite;
@@ -55,6 +43,7 @@ li {
 }
 
 #texte-au-fond {
+  z-index: 10;
   position: absolute;
   bottom: 0;
   color: ghostwhite;
@@ -68,6 +57,7 @@ li {
   height: 90vh;
   color: ghostwhite;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 11;
 }
 
 #Titre {
@@ -148,6 +138,7 @@ body {
 }
 
 #page-background {
+  z-index: -2;
   background: url('pictures/Capture\ d\'écran\ 2024-06-05\ 132537.png') no-repeat center center fixed;
   background-size: cover;
   width: 100%;
@@ -219,9 +210,23 @@ header {
   color: ghostwhite;
 }
 
+#sites_ia, #sites_ennui, #sites_autre, #sites_3D {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem,
+              0 0 0.8rem,
+              0 0 2.8rem,
+              inset 0 0 1.3rem;
+  align-self: flex-start; /* Empêche les boîtes de s'influencer mutuellement */
+}
+
 #sites_ia{
   width: 30%;
-  height: 210px;
+  height: auto;;
   border-radius: 10px;
   border: 2px solid rgb(0, 204, 255);
   background: rgb(0, 58, 145);
@@ -235,7 +240,7 @@ header {
 
 #sites_ennui{
   width: 30%;
-  height: 150px;
+  height: auto;;
   border-radius: 10px;
   border: 2px solid rgb(255, 187, 0);
   background: rgb(173, 0, 0);
@@ -248,7 +253,7 @@ header {
 }
 #sites_autre{
   width: 30%;
-  height: 150px;
+  height: auto;;
   border-radius: 10px;
   border: 2px solid rgb(0, 255, 115);
   background: rgb(0, 151, 45);
@@ -261,9 +266,9 @@ header {
 }
 #sites_3D{
   width: 30%;
-  height: 150px;
+  height: auto;;
   border-radius: 10px;
-  border: 2px solid rgb(255, 0, 212);
+  border: 2px solid rgb(255, 146, 237);
   background: rgb(173, 0, 144);
   box-shadow: 0 0 .2rem #fff,
   0 0 .2rem #fff,
@@ -289,7 +294,7 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
 #jeux {
@@ -317,15 +322,42 @@ header {
 }
 
 #Images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: block; /* Pour que les images soient placées l'une sous l'autre */
+  text-align: center; /* Centrer les images */
 }
 
 #Images img {
-  margin: 20px;
+  display: block;
+  margin: 20px auto; /* Centrer les images et ajouter de l'espace autour */
   border-radius: 10px;
   border: 2px solid rgb(0, 204, 255);
+  width: 960px; /* Augmenter la largeur initiale */
+  height: auto; /* Maintenir les proportions */
+  transition: transform 0.5s ease;
+}
+
+#Images img.grow {
+  transform: scale(1.1);
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
+}
+
+.styled-video {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 2px solid rgb(0, 204, 255);
+  width: 960px; /* Augmenter la largeur initiale */
+  height: auto; /* Maintenir les proportions */
+  transition: transform 0.5s ease;
+}
+
+.styled-video.grow {
+  transform: scale(1.1);
   box-shadow: 0 0 .2rem #fff,
   0 0 .2rem #fff,
   0 0 2rem #bc13fe,
