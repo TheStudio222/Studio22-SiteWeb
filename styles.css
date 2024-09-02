@@ -36,6 +36,16 @@ button {
   border-radius: 10px;
   height: 50px;
   border: 2px solid rgb(0, 204, 255);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #bc13fe,
+  0 0 0.8rem #bc13fe,
+  0 0 2.8rem #bc13fe,
+  inset 0 0 1.3rem #bc13fe;
 }
 
 li {
@@ -44,7 +54,6 @@ li {
 
 #texte-au-fond {
   z-index: 10;
-  position: absolute;
   bottom: 0;
   color: ghostwhite;
 }
@@ -54,14 +63,30 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
   color: ghostwhite;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   z-index: 11;
 }
 
+#Texte-de-présentation p {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  color: ghostwhite;
+}
+
+#logo-accueil {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;  /* Ajustez la largeur */
+  height: auto;
+
+}
+
 #Titre {
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 
@@ -77,9 +102,9 @@ a {
 }
 
 a:hover {
-  color:rgb(0, 204, 255);
+  color: rgb(255, 255, 255);
   font-family: Arial, sans-serif;
-  text-decoration: underline;
+
 }
 
 #BoutonJeux {
@@ -128,7 +153,7 @@ a:hover {
 
 #Lien2:hover {
   font-size: 25px;
-  color: rgb(146, 146, 255); 
+  color: rgb(255, 255, 255); 
   font-family: Arial, sans-serif;
 }
 
@@ -151,7 +176,7 @@ header {
   display: flex;
   align-items: center;
   background: #111111;
-  height: 80px;
+  height: 60px;
   width: 100%;
   top: 0;
   left: 0;
@@ -167,7 +192,7 @@ header {
 #Nouveautées {
   background: rgb(2, 0, 121);
   width: 30%;
-  height: 135px;
+  padding: 1%;
   text-align: center;
   border-radius: 10px;
   border: 2px solid rgb(0, 204, 255);
@@ -193,6 +218,40 @@ header {
   text-align: center;
 }
 
+#container {
+  display: flex;
+  justify-content: space-between; /* Espace entre les deux div */
+  align-items: flex-start; /* Aligne les divs en haut */
+}
+
+#imgcontainer {
+  margin: 100px auto 0 auto
+}
+
+#présentation-jeux {
+  margin-left: 20px; /* Ajoute une marge à gauche */
+  width: 550px;
+  height: auto;
+}
+
+#présentation-jeux img {
+  width: 550px; /* Fixe la largeur des images */
+  height: auto; /* La hauteur est ajustée automatiquement en fonction de la largeur */
+}
+
+#présentation-rendus {
+  margin-right: 20px; /* Ajoute une marge à droite */
+    width: 550px;
+    height: auto;
+    float: right; /* Permet de flotter à droite */
+    text-align: right; /* Aligne le texte à droite */
+}
+
+#présentation-rendus img {
+  width: 550px; /* Fixe la largeur des images */
+  height: auto; /* La hauteur est ajustée automatiquement en fonction de la largeur */
+}
+
 .mon-bloc {
     background-color: rgb(23, 0, 59);
     width: 100%;
@@ -206,8 +265,20 @@ header {
   justify-content: center;
 }
 
+#sites a{
+  color: rgb(255, 255, 255);
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+
 #sites a:hover{
-  color: ghostwhite;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  text-shadow: 0 0 0.2rem #fff,
+               0 0 0.2rem #fff,
+               0 0 2rem #ffffff,
+               0 0 0.8rem #ffffff,
+               0 0 2.8rem #ffffff;
 }
 
 #sites_ia, #sites_ennui, #sites_autre, #sites_3D {
@@ -284,7 +355,7 @@ header {
 }
 
 #Logo {
-  width: 60px;
+  width: 40px;
   height: auto;
   margin-left: 20px;
   margin-right: 20px;
@@ -383,7 +454,7 @@ iframe {
 .nav {
   display: flex;
   list-style: none;
-  margin-left: 100px;
+  margin-left: auto;
 }
 
 
@@ -391,7 +462,28 @@ iframe {
   color: white;
   font-family: "Arial", sans-serif; 
   margin-left: 30px;
-  font-size: 25px;
+  font-size: 20px;
+  transform: translateX(-20px);
+}
+
+.nav a {
+  transition: text-shadow 0.5s ease-in-out;
+  color: rgb(255, 255, 255);
+}
+
+.nav a:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 0.2rem #fff,
+               0 0 0.2rem #fff,
+               0 0 2rem #2313fe,
+               0 0 2rem #2313fe,
+               0 0 2rem #2313fe;
+}
+
+#infos {
+  background-color: #111111;
+  position: absolute;
+  padding: 20px;
 }
 
 /* Changer la barre de défilement */
@@ -412,4 +504,88 @@ iframe {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 204, 255); /* Couleur de la barre de défilement au survol */
+}
+
+/* Pour les écrans de taille égale ou inférieure à 768px (tablettes et téléphones) */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #Logo {
+    width: 50px; /* Réduire la taille du logo */
+    margin: 10px 0; /* Ajouter de l'espace autour */
+  }
+
+  .nav {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .nav li {
+    margin: 10px 0; /* Espacement vertical entre les éléments du menu */
+    font-size: 20px; /* Réduire la taille de la police */
+  }
+
+  #Texte-de-présentation {
+    padding: 20px; /* Ajouter du padding pour l'espace intérieur */
+    height: 120vh;
+    text-align: center;
+  }
+
+  #Texte-de-présentation h2 {
+    font-size: 18px; /* Réduire la taille du texte pour mieux s'adapter à l'écran */
+  }
+
+  #Nouveautées {
+    width: 80%; /* Adapter la largeur pour les écrans plus petits */
+    height: auto;
+    padding: 10px;
+  }
+
+  #sites {
+    flex-direction: column; /* Organiser les éléments en une seule colonne */
+    gap: 20px; /* Réduire l'espace entre les sections */
+  }
+
+  #sites_ia, #sites_ennui, #sites_autre, #sites_3D {
+    width: 100%; /* Chaque boîte prend toute la largeur de l'écran */
+    height: auto;
+  }
+
+  #Images img, .styled-video {
+    width: 100%; /* Adapter les images et les vidéos à la largeur de l'écran */
+  }
+
+  #Avatar {
+    display: none; /* Masquer l'avatar si l'espace est trop limité */
+  }
+}
+
+/* Pour les très petits écrans (inférieurs à 480px) */
+@media (max-width: 480px) {
+
+  #Titre {
+    width: 150px; /* Réduire davantage la taille du titre */
+  }
+
+  .nav li {
+    font-size: 18px; /* Réduire encore la taille de la police */
+  }
+
+  #Texte-de-présentation {
+    height: 130vh;
+  }
+
+  #Texte-de-présentation h2 {
+    font-size: 16px; /* Ajuster la taille du texte */
+  }
+
+  #Nouveautées {
+    width: 100%; /* Prendre toute la largeur de l'écran */
+    height: auto;
+  }
 }
