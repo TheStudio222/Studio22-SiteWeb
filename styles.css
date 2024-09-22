@@ -511,7 +511,9 @@ iframe {
 
   header {
     flex-direction: column;
+    position:static;
     height: auto;
+
   }
 
   #Logo {
