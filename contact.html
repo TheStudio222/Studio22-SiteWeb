@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Me Contacter</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="icon" href="pictures/logo.png" type="image/png">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img id="Logo" src="pictures/Logo grand.png" alt="The Studio 22 Website"></a>
+            <a href="index.html"><img id="Titre" src="pictures/Titre.png" alt="The Studio 22 Website"></a>
+                <nav class="nav">
+                    <li><a href="jeuxscratch.html">Mes jeux</a></li>
+                    <li><a href="blender.html">Mes rendus 3D</a></li>
+                    <li><a href="sites.html">Quelques sites</a></li>
+                    <li><a href="présentation.html">Qui suis je ?</a></li>
+                    <li><a href="contact.html">Me contacter</a></li>
+                </nav>
+        </header>
+        <div id="page-background2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Vous souhaitez me contacter ? C'est possible</h1>
+        <div id="maildiv">
+        <button id="mail">thestudio22@protonmail.com</button>
+        </div>
+        </div>
+    </body>
+    <script>
+        // Sélection du bouton
+        const mailButton = document.getElementById('mail');
+
+        // Ajout de l'événement de clic
+        mailButton.addEventListener('click', function() {
+            // Création d'un élément temporaire pour copier le texte
+            const tempInput = document.createElement('input');
+            tempInput.value = mailButton.textContent;
+            document.body.appendChild(tempInput);
+
+            // Sélection et copie du texte
+            tempInput.select();
+            document.execCommand('copy');
+
+            // Suppression de l'élément temporaire
+            document.body.removeChild(tempInput);
+
+            // Affichage d'un message de confirmation
+            alert('Adresse e-mail copiée : ' + mailButton.textContent);
+        });
+    </script>
+</html>
