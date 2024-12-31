@@ -160,6 +160,12 @@ a:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   z-index: 11;
 }
+#Texte-de-présentation h2 {
+  font-size: 1.3vw;
+  line-height: 1.2;
+  margin: 1em auto;
+  text-align: center;
+}
 
 #Texte-de-présentation p {
   z-index: 10;
@@ -172,9 +178,8 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
+  width: 5vw;
   height: auto;
-
 }
 
 #Titre {
