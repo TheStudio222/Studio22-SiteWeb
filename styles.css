@@ -75,6 +75,27 @@ a:hover {
 
 }
 
+#youtube {
+  align-items: center;
+  text-align: center;
+}
+
+#youtube h2 {
+  font-family: "arial", sans-serif;
+  color: ghostwhite;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#youtube_video {
+  width: 99vw; /* prend toute la largeur de la fenêtre */
+  height: 500px; /* ou une hauteur que tu choisis */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, rgb(9, 0, 67), #E62117);
+}
+
+
 #mail {
   color: ghostwhite;
   padding: 10px 20px;
